@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:pe="http://primefaces.org/ui/extensions"
+	xmlns:p="http://primefaces.org/ui">
+
+	
+	
+<p:panel id="console" header="Runtime" toggleable="true">
+<p:panelGrid columns="3" id="oneLi" style="border:none">
+<h:inputText value="#{terminalBean.entrada}" />
+	
+	<p:commandButton value="Enter" action="#{terminalBean.exec()}"  ajax="true" update="console"/>
+	<p:commandButton value="Limpar" action="#{terminalBean.limpar()}"  ajax="true" update="console"/>
+	
+</p:panelGrid>
+<ui:repeat var="linha" value="#{terminalBean.saidaConsole}">
+
+	#{linha} <br />
+
+</ui:repeat>
+
+
+	
+</p:panel>
+<p:spacer height="80px"></p:spacer>
+
+<p:panel id="consoleProcess" toggleable="true" header="Process">
+<p:panelGrid columns="4" id="oneprocess" style="border:none">
+Comando:<h:inputText value="#{terminalBean.entradaProc}" />
+Caminho:<h:inputText value="#{terminalBean.path}" />
+	
+	<p:commandButton value="Adicionar" action="#{terminalBean.add()}"  ajax="true" update="consoleProcess"/>
+	<p:commandButton value="Executar" action="#{terminalBean.execProc()}"  ajax="true" update="consoleProcess"/>
+	<p:commandButton value="Limpar Entrada" action="#{terminalBean.limparEntrada()}"  ajax="true" update="consoleProcess"/>
+	<p:commandButton value="Limpar" action="#{terminalBean.limparProc()}"  ajax="true" update="consoleProcess"/>
+	
+</p:panelGrid>
+
+<p:panelGrid columns="2" id="onsess" style="border:none">
+<ui:repeat var="linhaS" value="#{terminalBean.saidaConsoleProc}">
+
+	#{linhaS} <br />
+
+</ui:repeat>
+
+<ui:repeat var="linhaE" value="#{terminalBean.entradaConsoleProc}">
+
+	#{linhaE} <br />
+
+</ui:repeat>
+
+</p:panelGrid>
+	
+</p:panel>
+	
+
+
+</html>

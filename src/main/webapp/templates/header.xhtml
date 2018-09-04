@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:pe="http://primefaces.org/ui/extensions"
+      xmlns:p="http://primefaces.org/ui">
+      
+<ui:composition>
+
+  <h:outputStylesheet library="css" name="standard.css" />
+  <h:outputStylesheet library="css" name="custom.css" />
+
+  <h:outputScript library="js" name="calendar.js" />
+  <h:outputScript library="js" name="jquery.maskMoney.js" />
+  <h:outputScript library="js" name="util.js" />
+  <h:outputScript library="js" name="formatacaoGeral.js" />
+  
+  <link rel="shortcut icon" type="image/x-icon" href="#{request.contextPath}/favicon.ico" />
+		
+  <p:importConstants type="br.tottou.terminal.util.Constantes" var="Constantes" />
+  <p:importConstants type="br.tottou.terminal.util.Mensagens" var="Mensagens" />
+  <p:importEnum type="br.tottou.terminal.util.enums.EnumOperacao" var="EnumOperacao" allSuffix="ALL_ENUM_VALUES" /> 
+  
+  <title>Terminal v#{Constantes.VERSAO_SISTEMA}</title>
+  
+</ui:composition>
+</html>

@@ -1,0 +1,510 @@
+label {
+	color: #555;
+}
+
+.form-block div{
+	border-radius: 3px; 	
+}
+
+/* .ui-fieldset {
+	border-top: 3px solid #aaa !important;
+	border-left: 3px solid #aaa !important;		
+	padding-top: 12px !important;
+	border-top-left-radius: 10px !important;
+	background-color: #f8f8f8 !important;
+} */
+
+/* Estilos pro panelGrid de formul�rio */
+.grid-form {
+	margin-bottom: 10px;
+}
+
+.grid-form tbody tr {
+	vertical-align: top;
+	height: 35px;
+}
+
+.grid-form tbody tr td:FIRST-CHILD {
+	text-align: right;
+	padding-right: 5px;
+}
+
+.linha-form {
+	clear: both;
+	min-height: 20px !important;
+}
+
+.linha-form-botoes {
+	clear: both;
+	text-align: center;
+	margin: 0 0 10px 0;
+}
+
+.coluna-form {
+	min-height: 40px;
+	float: left;
+}
+
+.coluna-form label {
+	min-width: 60px;
+	float: left;
+	text-align: right;
+	vertical-align: middle;
+	margin-right: 6px;
+}
+
+.datatable-footer-field {
+	margin: 6px 0;
+	float: left;
+}
+.datatable-footer-field div {	
+	text-align: left;
+}
+.datatable-footer-field label {
+	min-width: 60px;
+	float: left;
+	text-align: right;
+	vertical-align: middle;
+	margin-right: 6px;
+}
+
+
+.linha-form-botoes button {
+	margin-left: 5px;
+	margin-top: 10px;
+}
+
+.coluna-acoes {
+	/* width: 100%; */
+	text-align: center !important;
+}
+
+.panelDatas {
+	vertical-align: middle;
+	border: 0px !important;
+}
+
+.panelDatas tr:HOVER {
+	font-weight: bold;
+}
+
+.panelDatas tr, .panelDatas td {
+	border: 0px !important;
+}
+
+.imagemExibicao {
+	text-align: center;
+	margin-bottom: 5px;	
+}
+.imagemExibicao img {
+	max-height: 270px;
+}
+
+
+/* Sobrescrevendo Primefaces */
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+	opacity: 0.6 !important;
+}
+
+.ui-datatable tbody td {
+	border-color: #D9D9D9 !important;
+}
+
+
+.ui-menu {
+    font-size: 13px !important;
+}
+
+.ui-menu .ui-menu-parent .ui-menu-child {
+	width: 16.5em !important;
+}
+
+.ui-menubar .ui-menu-child .ui-menuitem-link {
+	width: 95% !important;
+} 
+
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {
+    border: 2px solid #ef5350 !important;  
+}
+
+
+.ui-selectonemenu .ui-selectonemenu-trigger {
+    border-bottom: 0 none !important;
+    border-right: 0 none !important;
+    border-top: 0 none !important;  
+}
+
+.ui-outputlabel.ui-state-error {
+    border: 0 none !important;
+}
+
+/* .ui-radiobutton .ui-state-error {
+	border-left: 3px solid #ef5350 !important;  
+} */
+   
+/* .ui-menu {
+	background: none !important;
+	margin-top: 4px;
+}
+ */
+/* .ui-menubar-options {
+	margin-top: 8px !important;
+}
+
+.ui-menuitem-active {
+	background: none !important;
+}
+
+.ui-state-hover {
+	background: none !important;
+}
+
+ .ui-fieldset-legend {
+	background: none !important;
+	padding: 0.3em 1em !important;
+} 
+
+.ui-progressbar {
+	display: none !important;
+}
+
+.ui-menu .ui-menu-parent .ui-menu-child {
+ 	width: 19em !important; Largura da lista de submenus
+} 
+
+.ui-chkbox .ui-chkbox-label{
+	font-weight: bold !important;
+	margin: 2px 0 0 8px !important;
+} */
+
+/* .ui-panel {
+	padding-bottom: 20px !important;
+} */
+/* -------------------- */
+
+/* Gen�ricos */
+.col10 {
+	width: 10%;
+}
+
+.col20 {
+	width: 20%;
+}
+
+.col30 {
+	width: 30%;
+}
+
+.col40 {
+	width: 40%;
+}
+
+.col50 {
+	width: 50%;
+}
+
+.col60 {
+	width: 60%;
+}
+
+.col70 {
+	width: 70%;
+}
+
+.col80 {
+	width: 80%;
+}
+
+.col90 {
+	width: 90%;
+}
+
+.tam15 {
+	width: 15px !important;
+}
+
+.tam20 {
+	width: 20px !important;
+}
+
+.tam30 {
+	width: 30px !important;
+}
+
+.tam40 {
+	width: 40px !important;
+}
+
+.tam50 {
+	width: 50px !important;
+}
+
+.tam60 {
+	width: 60px !important;
+}
+
+.tam70 {
+	width: 70px !important;
+}
+
+.tam80 {
+	width: 80px !important;
+}
+
+.tam90 {
+	width: 90px !important;
+}
+
+.tam95 {
+	width: 95px !important;
+}
+
+.tam100 {
+	width: 100px !important;
+}
+
+.tam105 {
+	width: 105px !important;
+}
+
+.tam110 {
+	width: 110px !important;
+}
+
+.tam120 {
+	width: 120px !important;
+}
+
+.tam130 {
+	width: 130px !important;
+}
+
+.tam140 {
+	width: 140px !important;
+}
+
+.tam150 {
+	width: 150px !important;
+}
+
+.tam160 {
+	width: 160px !important;
+}
+
+.tam170 {
+	width: 170px !important;
+}
+
+.tam180 {
+	width: 180px !important;
+}
+
+.tam190 {
+	width: 190px !important;
+}
+
+.tam200 {
+	width: 200px !important;
+}
+
+.floatR {
+	float: right !important;
+}
+
+.floatL {
+	float: left !important;
+}
+
+.clearBoth {
+	clear: both;
+}
+
+.textAlignCenter {
+	text-align: center !important;
+}
+
+.textAlignR {
+	text-align: right;
+}
+
+.textAlignL {
+	text-align: left;
+}
+
+.width100 {
+	width: 100% !important;
+}
+
+.width95 {
+	width: 95% !important;
+}
+
+.width92 {
+	width: 92% !important;
+}
+
+.width90 {
+	width: 90% !important;
+}
+
+.width85 {
+	width: 85% !important;
+}
+
+.width80 {
+	width: 80% !important;
+}
+
+.width75 {
+	width: 75% !important;
+}
+
+.width70 {
+	width: 70% !important;
+}
+
+.width60 {
+	width: 60% !important;
+}
+
+.width50 {
+	width: 50% !important;
+}
+
+.width45 {
+	width: 45% !important;
+}
+
+.width40 {
+	width: 40% !important;
+}
+
+.width35 {
+	width: 35% !important;
+}
+
+.width30 {
+	width: 30% !important;
+}
+
+.width25 {
+	width: 25% !important;
+}
+
+.width20 {
+	width: 20% !important;
+}
+
+.width15 {
+	width: 15% !important;
+}
+
+.width10 {
+	width: 10% !important;
+}
+
+.width5 {
+	width: 5% !important;
+}
+
+.opaco {
+	opacity: 0.6 !important;
+}
+
+.green {
+	color: green;
+}
+
+.red {
+	color: red;
+}
+
+.red, .green {
+	/* font-weight: bold; */
+}
+
+.menuSeparador {
+	width: 2px;
+	height: 22px;
+	position: relative; 
+	bottom: -5px;
+	background-color: #CCC; 
+	margin-left: 10px;
+	margin-right: 10px; 
+	float:left;
+}
+
+.descricao-perfil {
+	color: #616161;
+}
+/* 
+.ui-menu-item-opaco{
+	background: #c4c4c4 -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0))) !important;
+} */
+.form-actions {
+    background-color: whitesmoke;
+    border-top: 1px solid #e5e5e5;
+    padding: 15px 20px;
+}
+.form-actions::before, .form-actions::after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+.form-actions::after {
+    clear: both;
+}
+.form-actions > * {
+    float: right;
+    margin-right: 10px;
+}
+
+.ui-grid-col-1-sm {
+	width: initial;	
+}
+
+.ui-spinner a{
+	float: left;
+}
+
+.label-blue{
+	background: #2399e5;
+    color: #fff;
+    text-align: center;
+    padding-top: 20 !important;
+    padding: .2em .6em .3em;
+    box-shadow: 0 1px 0 #f7f7f7, inset 0 1px 1px #2399e5;
+    background-size: 100%;
+    background-image: -webkit-linear-gradient(top, #2399e5, #2399e5);
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+.form-req {
+    color: #d10000;
+    float: right !important;
+}
+
+.textBold {
+	font-weight: bold;	
+}
+
+.required {
+	font-weight: bold;	
+	color: red;	
+}
+.none {
+	
+}
+
+.ui-panelgrid .ui-panelgrid-cell {
+    border: none !important;    
+      border-width: 0 !important;
+}
+
+.ui-widget-content {
+    border: 0px !important;
+}
+

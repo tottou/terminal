@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:pe="http://primefaces.org/ui/extensions"
+	xmlns:p="http://primefaces.org/ui">
+	
+	
+<f:view locale="#{localeBean.locale}" contentType="text/html" >
+	<h:head>
+		<ui:insert name="header">
+			<ui:include src="header.xhtml" />
+		</ui:insert>
+	</h:head>
+	<h:body>
+		<div class="wrapper">
+				<p:panel cellspacing="0" cellpadding="0" styleClass="menu">
+					<h:panelGrid columns="3"  style="width:100% !important" columnClasses="textAlignL,textAlignCenter,floatR">
+						<h:panelGrid cellspacing="0" cellpadding="0">
+							<h:link outcome="/home.faces" >
+								<h:graphicImage library="imagens" name="terminal.png" styleClass="banner" width="70" alt="Logo TSE" />
+							</h:link>
+						</h:panelGrid>
+						<h:panelGrid cellspacing="0" cellpadding="0" style="width:90% !important;">
+							<h:outputFormat value="" style="font-weight: bold; font-size: 1.2em; padding-right: 200px;"/>
+						</h:panelGrid>
+						<h:panelGrid cellspacing="0" cellpadding="0" >
+							<h:outputLabel styleClass="textAlignR" value="Versão: #{Constantes.VERSAO_SISTEMA}" /> 
+						</h:panelGrid>
+					</h:panelGrid>						
+				</p:panel>
+				
+				<!-- 
+				<ui:insert name="menu">
+					<ui:include src="menu.xhtml" />
+				</ui:insert>
+				 -->
+				
+				<div>
+					<p:messages id="messages" showDetail="true" autoUpdate="true" closable="true" showSummary="false" />
+				</div>		
+				
+				<div class="ui-grid ui-grid-responsive" style="margin-top: 4px;" >
+				    <div class="ui-grid-row">
+				        <div class="ui-grid-col-12" role="main">
+							<ui:insert name="content" />
+				        </div>
+				    </div>
+				</div>
+				
+				<p:ajaxStatus onstart="PF('statusDialog').show()" onsuccess="PF('statusDialog').hide()" onerror="redirectHome()" />
+				 
+				<p:dialog widgetVar="statusDialog" modal="true" draggable="false" closable="false" resizable="false" showHeader="false" position="center">
+				    <h:graphicImage library="imagens" name="loading.gif" />
+				</p:dialog>
+				
+				
+				<ui:insert name="footer">
+					<ui:include src="footer.xhtml" />
+				</ui:insert>
+				
+
+		</div>		
+	</h:body>
+</f:view>
+
+<script type="text/javascript">
+	function redirectHome() {
+		window.location.href = "#{request.contextPath}/index.html";
+	}
+</script>
+
+
+</html>

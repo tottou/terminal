@@ -1,0 +1,79 @@
+body,div,td {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    word-wrap: break-word;
+}
+
+body {
+    background-color: #fff;
+    text-align: left;
+}
+
+a img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #4d4444;
+}
+
+a:active {
+    color: #4d4444;
+}
+
+a:visited {
+    color: #4d4444;
+}
+
+.wrapper {
+/*     width: 1024px;
+    margin: auto; */
+}
+
+.menu {
+    /* width: 230px; */
+    vertical-align: top;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.content {
+    vertical-align: top;
+     width: 1019px; 
+}
+
+.banner {
+    margin-bottom:5px;
+}
+
+.action-column {
+    text-align: center;
+    width: 120px !important;
+}
+
+/* .ui-selectmanymenu {
+    width: 155px !important;
+    height: 100px !important;
+}
+ */
+.dialog {
+    width: auto;
+}
+
+.col1 {
+    vertical-align: top;
+    font-weight: bold;
+}
+
+.col2 {
+    vertical-align: top;
+}
+
+.col3 {
+    vertical-align: top;
+}

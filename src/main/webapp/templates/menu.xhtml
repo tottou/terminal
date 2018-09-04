@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	
+<ui:composition>
+
+	<h:form prependId="false">
+		
+		<p:menubar model="#{montagemDeMenuModel.model}" autoDisplay="false" >
+		
+	        <f:facet name="options" >
+	               
+	        	
+	        </f:facet>        
+		
+		
+		</p:menubar> 
+			
+		 
+    	<p:dialog header="Modal Dialog" widgetVar="dialogMenu" modal="true" height="130" resizable="false">
+    		<f:facet name="header">Sair</f:facet>
+    		<br/>
+    		<span class="ui-icon ui-confirm-dialog-severity ui-icon-alert"></span>
+    		<h:outputText value="#{msgsBundle.MSG009}" />
+    		<br/>
+    		<div class="ui-dialog-buttonpane ui-dialog-footer ui-widget-content ui-helper-clearfix" style="margin-top: 24px;">
+    	
+    		</div>
+		</p:dialog>
+		
+	</h:form>
+
+</ui:composition>
+</html>

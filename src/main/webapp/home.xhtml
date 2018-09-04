@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<html xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:pe="http://primefaces.org/ui/extensions"
+	xmlns:p="http://primefaces.org/ui">
+
+	<ui:composition template="templates/layout.xhtml">
+		<ui:define name="content">
+		
+			<h:form id="form" prependId="false">
+			
+					<p:panel id="authz" toggleable="false" toggleSpeed="250" rendered="#{!terminalBean.auth}">
+						<p:password value="#{terminalBean.password}" ></p:password>
+						<p:commandButton action="#{terminalBean.autoriza}" icon="fa fa-ra" update="form"></p:commandButton>
+					</p:panel>
+				
+				<p:panel id="mainPanel" toggleable="false" toggleSpeed="250" rendered="#{terminalBean.auth}">
+					
+					<ui:include src="pages/dados.xhtml"  />
+					
+				</p:panel>			
+				
+				
+				
+				
+			</h:form>
+			
+		</ui:define>
+	</ui:composition>
+	
+</html>
